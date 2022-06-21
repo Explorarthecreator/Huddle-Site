@@ -30,8 +30,8 @@ nav div{
     outline: none;
     background: none;
 }
-nav div a{
-    background-color: hsl(322, 100%, 66%);
+nav .nav-link a{
+    background-color: white;
     color: black;
     display: flex;
     width: 100%;
@@ -40,10 +40,13 @@ nav div a{
     justify-content: center;
     border-radius: 20px;
     text-decoration: none;
+    font-size: larger;
+    font-family: 'Open Sans', sans-serif;
 }
-nav div a:hover{
-    background-color:transparent;
-    color: white;
+nav .nav-link a:hover{
+    background-color: rgba(255, 255, 255, 0.806);
+    /* background-color:red; */
+    box-shadow: 2px 2px 2px grey;
     border: 1px solid white;
 }
 main{
@@ -63,6 +66,17 @@ main{
     gap: 30px;
     flex-direction: column;
 }
+.left-container h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    color: hsl(192, 100%, 9%);
+
+}
+.left-container p{
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(208, 11%, 55%);
+    font-weight:400;
+}
 .image-container{
     width: 60%;
     height: 100%;
@@ -81,20 +95,27 @@ main{
     background: none;
 }
 .left-container div a{
-    background-color: white;
+    background-color: hsl(322, 100%, 66%);
     color: black;
     display: flex;
     width: 100%;
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    font-size: larger;
     text-decoration: none;
 }
 .left-container div a:hover{
-    background-color:transparent;
+    background-color: hsla(322, 100%, 66%, 0.779);
+    /* background-color: rgba(255, 255, 255, 0.806); */
+    /* background-color:red; */
+    box-shadow: 2px 7px 15px grey;
     color: white;
-    border: 1px solid white;
+    font-weight:400;
+    font-size: larger;
+    /* border: 1px solid white; */
 }
 
 .middle-section{
@@ -129,9 +150,13 @@ main{
 }
 .description h1{
     color: hsl(192, 100%, 9%);
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
 }
 .description p{
     color: hsl(208, 11%, 55%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
 }
 .description h1,p{
     width: 80%;
@@ -175,9 +200,11 @@ footer{
     width: 100%;
     height: 500px;
     background-color: hsl(192, 100%, 9%);
-    color: hsl(208, 11%, 55%);
+    color: white;
     padding-top: 200px;
     position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 .footer-container{
     width: 80%;
@@ -191,14 +218,15 @@ footer{
     height: auto;
     display: flex;
     justify-content: space-between;
-    border: 1px solid;
+    margin-top: 20px;
+    /* border: 1px solid; */
 }
 .contact-details .first{
-    width: 25%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 .contact-details .first div{
     display: flex;
@@ -213,21 +241,17 @@ footer{
     height: 20px;
 }
 .contact-details .second{
-    border: 1px solid;
+    /* border: 1px solid; */
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.social-media{
-    display: flex;
-    gap: 10px;
+.contact-details .second a{
+    text-decoration: none;
+    color: white;
 }
-.social-media .social{
-    width: 35px;
-    height: 35px;
-    border-radius: 100%;
-    border: 1px solid white;
-    /* background-color: aqua; */
+.contact-details .second a:hover{
+    text-decoration: underline;
 }
 .build-community{
     height: 300px;
@@ -235,7 +259,7 @@ footer{
     margin: auto;
     border-radius: 25px;
     background-color: rgb(251, 251, 251);
-    box-shadow: 3px 5px 5px 4px rgba(128, 128, 128, 0.606);
+    box-shadow: 3px -5px 5px 4px rgba(128, 128, 128, 0.402);
     display: flex;
     align-items: center;
     position: absolute;
@@ -248,6 +272,10 @@ footer{
     margin: auto;
     text-align: center;
     color: hsl(192, 100%, 9%);
+}
+.build-community .description h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: xx-large;
 }
 .build-community .description div{
     width: 200px;
@@ -266,10 +294,29 @@ footer{
     justify-content: center;
     border-radius: 20px;
     text-decoration: none;
+    font-size: larger;
+    font-family: 'Open Sans', sans-serif;
+
 }
-.left-container div a:hover{
-    background-color:transparent;
+.build-community .description div a:hover{
+    background-color: hsla(322, 100%, 66%, 0.779);
+    /* background-color: rgba(255, 255, 255, 0.806); */
+    /* background-color:red; */
+    box-shadow: 2px 7px 15px grey;
     color: white;
-    border: 1px solid white;
+    font-weight:400;
+    font-size: larger;
 }
+.social-media{
+    display: flex;
+    gap: 10px;
+}
+.social-media .social{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: 1px solid white;
+    /* background-color: aqua; */
+}
+
 
